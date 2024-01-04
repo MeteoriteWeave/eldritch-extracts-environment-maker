@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvybjw1clwb78"]
+
+[ext_resource type="Material" uid="uid://c7yljix8pljf2" path="res://prototype_blocks/prototype_texture.tres" id="1_7s72p"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6fyy6"]
+size = Vector3(4, 1, 4)
+
+[node name="3X3" type="MeshInstance3D"]
+material_override = ExtResource("1_7s72p")
+mesh = SubResource("BoxMesh_6fyy6")

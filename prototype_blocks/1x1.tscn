@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3xij8nrxlu4n"]
+
+[ext_resource type="Material" uid="uid://c7yljix8pljf2" path="res://prototype_blocks/prototype_texture.tres" id="1_tldmy"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_weo10"]
+
+[node name="1x1" type="MeshInstance3D"]
+material_override = ExtResource("1_tldmy")
+mesh = SubResource("BoxMesh_weo10")
