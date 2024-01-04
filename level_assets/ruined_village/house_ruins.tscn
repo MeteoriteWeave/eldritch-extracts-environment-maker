@@ -1,3 +1,160 @@
-[gd_scene format=3 uid="uid://dfcqk8dpnk04m"]
+[gd_scene load_steps=4 format=3 uid="uid://dfcqk8dpnk04m"]
+
+[ext_resource type="PackedScene" uid="uid://bvybjw1clwb78" path="res://prototype_blocks/4X4.tscn" id="1_sw7jn"]
+[ext_resource type="Material" uid="uid://c7yljix8pljf2" path="res://prototype_blocks/prototype_texture.tres" id="2_5wbny"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6fyy6"]
+size = Vector3(4, 1, 4)
 
 [node name="House ruins" type="Node3D"]
+
+[node name="GroundPLane" type="Node3D" parent="."]
+
+[node name="4X4_tscn" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn2" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn3" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn4" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn5" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn6" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -8)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn7" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn8" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn9" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn10" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn11" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn12" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn13" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn14" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn15" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn16" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -8)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn17" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn18" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn19" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn20" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 8)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn21" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 8)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn22" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 4)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn23" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn24" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
+
+[node name="4X4_tscn25" type="MeshInstance3D" parent="GroundPLane" instance=ExtResource("1_sw7jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -8)
+material_override = ExtResource("2_5wbny")
+mesh = SubResource("BoxMesh_6fyy6")
+skeleton = NodePath("../..")
